@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the DrupalEasy installation profile.
+ */
+
+use Drupal\user\Entity\User;
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ */
+function drupaleasy_install() {
+  // Assign user 1 the "administrator" role.
+  $user = User::load(1);
+  $user->roles[] = 'administrator';
+  $user->save();
+
+  // Add terms to the Topics vocabulary.
+  $terms_to_add = [
+    'Batman',
+    'Robin',
+    'Catwoman',
+    'Joker',
+    'Poison Ivy',
+    'Penguin',
+  ];
+  foreach ($terms_to_add as $term) {
+    Term::create(array(
+      'parent' => array(),
+      'name' => $term,
+      'vid' => 'topics',
+    ))->save();
+  }
+}
+
