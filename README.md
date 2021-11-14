@@ -9,7 +9,7 @@ training course. More info at https://www.drupaleasy.com/dco
 
 ### Usage
 
-1. Download the installation profile and place in your project root.
+1. Download the installation profile and place in your project root. Be sure the directory's name is "drupaleasy-d9install".
 
 2. Add the following to the "repositories" section of your project's composer.json file:
 
