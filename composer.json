@@ -13,6 +13,6 @@
         "drupal/admin_toolbar": "^3.0",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
-        "drush/drush": "^10.5"
+        "drush/drush": "^11"
     }
 }
