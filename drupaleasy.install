@@ -29,11 +29,11 @@ function drupaleasy_install() {
     'Penguin',
   ];
   foreach ($terms_to_add as $term) {
-    Term::create(array(
-      'parent' => array(),
+    Term::create([
+      'parent' => [],
       'name' => $term,
       'vid' => 'topics',
-    ))->save();
+    ])->save();
   }
 }
 
