@@ -1,14 +1,14 @@
-name: DrupalEasy Drupal 9 install profile
+name: DrupalEasy Drupal 10 install profile
 type: profile
-core_version_requirement: ^9.0
-description: 'Basic DrupalEasy install profile for Drupal 9 sites.'
+core_version_requirement: ^10
+description: 'Basic DrupalEasy install profile for Drupal 10 sites.'
 
 install:
   - node
   - history
   - block
   - breakpoint
-  - ckeditor
+  - ckeditor5
 #  - color
   - config
 #  - comment
@@ -42,6 +42,7 @@ install:
   - admin_toolbar_tools
   - pathauto
   - redirect
+  - text
 themes:
 #  - bartik
 #  - seven
