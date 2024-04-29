@@ -5,11 +5,10 @@ description: 'Basic DrupalEasy install profile for Drupal 10 sites.'
 
 install:
   - node
-  - history
+#  - history
   - block
   - breakpoint
   - ckeditor5
-#  - color
   - config
 #  - comment
   - contextual
@@ -17,7 +16,6 @@ install:
   - menu_link_content
   - datetime
   - block_content
-#  - quickedit
   - editor
 #  - help
   - image
@@ -31,20 +29,13 @@ install:
   - dblog
 #  - search
 #  - shortcut
-  - toolbar
+#  - toolbar
   - field_ui
   - file
-#  - rdf
   - views
   - views_ui
-#  - tour
   - automated_cron
-  - admin_toolbar_tools
-  - pathauto
-  - redirect
-  - text
+#  - announcements_feed
 themes:
-#  - bartik
-#  - seven
   - olivero
   - claro
